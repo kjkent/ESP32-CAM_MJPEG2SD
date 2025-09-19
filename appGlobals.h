@@ -57,13 +57,13 @@
   Optional features NOT included by default to reduce heap use 
   To include a particular feature, change false to true
 ***************************************************************/
-#define INCLUDE_FTP_HFS false // ftp.cpp (file upload)
+#define INCLUDE_FTP_HFS true  // ftp.cpp (file upload)
 #define INCLUDE_TGRAM false   // telegram.cpp (Telegram app interface)
 #define INCLUDE_AUDIO false   // audio.cpp (microphones & speakers)
 #define INCLUDE_PERIPH false  // peripherals.cpp (servos, PIR, led etc)
 #define INCLUDE_SMTP false    // smtp.cpp (email)
-#define INCLUDE_MQTT false    // mqtt.cpp (MQTT)
-#define INCLUDE_HASIO false   // mqtt.cpp (Send home assistant discovery messages). Needs INCLUDE_MQTT true
+#define INCLUDE_MQTT true    // mqtt.cpp (MQTT)
+#define INCLUDE_HASIO true   // mqtt.cpp (Send home assistant discovery messages). Needs INCLUDE_MQTT true
 
 #define INCLUDE_CERTS false   // certificates.cpp (https and server certificate checking)
 #define INCLUDE_UART false    // uart.cpp (use another esp32 as Auxiliary connected via UART)
@@ -72,7 +72,7 @@
 #define INCLUDE_EXTHB false   // externalHeartbeat.cpp (heartbeat to remote server)
 #define INCLUDE_PGRAM false   // photogram.cpp (photogrammetry feature). Needs INCLUDE_PERIPH true
 #define INCLUDE_MCPWM false   // mcpwm.cpp (BDC motor control). Needs INCLUDE_PERIPH true
-#define INCLUDE_RTSP false    // rtsp.cpp (RTSP Streaming). Requires additional library: ESP32-RTSPServer
+#define INCLUDE_RTSP true    // rtsp.cpp (RTSP Streaming). Requires additional library: ESP32-RTSPServer
 #define INCLUDE_DS18B20 false // if true, requires INCLUDE_PERIPH and additional libraries: OneWire and DallasTemperature
 #define INCLUDE_I2C false     // periphsI2C.cpp (support for I2C peripherals)
 
