@@ -31,7 +31,7 @@ bool nightTime = false;
 uint8_t fsizePtr; // index to frameData[]
 uint8_t minSeconds = 5; // default min video length (includes POST_MOTION_TIME)
 bool doRecording = true; // whether to capture to SD or not
-uint8_t xclkMhz = 20; // camera clock rate MHz
+uint8_t xclkMhz = 16; // camera clock rate MHz
 bool doKeepFrame = false;
 static bool haveSrt = false;
 char camModel[11];
