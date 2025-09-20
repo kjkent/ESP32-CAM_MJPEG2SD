@@ -52,6 +52,8 @@
 #error "Must select ESP32 or ESP32S3 board for camera"
 #endif
 
+#define GITHUB_REPO   "kjkent/ESP32-CAM_MJPEG2SD"
+#define GITHUB_BRANCH "kjkent"
 
 /***************************************************************
   Optional features NOT included by default to reduce heap use 
@@ -156,7 +158,7 @@
 #else
 #define STORAGE SD_MMC
 #endif
-#define GITHUB_PATH "/s60sc/ESP32-CAM_MJPEG2SD/master"
+#define GITHUB_PATH GITHUB_REPO "/" GITHUB_BRANCH
 #define RAMSIZE (1024 * 8) // set this to multiple of SD card sector size (512 or 1024 bytes)
 #define CHUNKSIZE (1024 * 4)
 #define ISCAM // cam specific code in generic cpp files
