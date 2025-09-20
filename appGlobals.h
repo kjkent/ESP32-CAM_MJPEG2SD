@@ -158,7 +158,7 @@
 #else
 #define STORAGE SD_MMC
 #endif
-#define GITHUB_PATH GITHUB_REPO "/" GITHUB_BRANCH
+#define GITHUB_PATH "/" GITHUB_REPO "/" GITHUB_BRANCH
 #define RAMSIZE (1024 * 8) // set this to multiple of SD card sector size (512 or 1024 bytes)
 #define CHUNKSIZE (1024 * 4)
 #define ISCAM // cam specific code in generic cpp files
