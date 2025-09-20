@@ -119,7 +119,7 @@ bool updateAppStatus(const char* variable, const char* value, bool fromUser) {
   else if (!strcmp(variable, "servoMinPulseWidth")) servoMinPulseWidth = intVal;
   else if (!strcmp(variable, "servoMaxPulseWidth")) servoMaxPulseWidth = intVal;
   else if (!strcmp(variable, "servoCenter")) servoCenter = intVal;
-  else if (!strcmp(variable, "voltDivider")) voltDivider = intVal;
+  else if (!strcmp(variable, "voltDivider")) voltDivider = fltVal;
   else if (!strcmp(variable, "voltLow")) voltLow = fltVal;
   else if (!strcmp(variable, "voltInterval")) voltInterval = intVal;
   else if (!strcmp(variable, "buzzerUse")) buzzerUse = (bool)intVal;  
@@ -935,7 +935,7 @@ servoMaxAngle~180~6~N~Set max angle for servo model
 servoMinPulseWidth~544~6~N~Set min pulse width for servo model (usecs)
 servoMaxPulseWidth~2400~6~N~Set max pulse width for servo model (usecs)
 servoCenter~90~6~N~Angle at which servo centered
-voltDivider~2~3~N~Voltage divider resistor ratio
+voltDivider~1.3333~3~N~Voltage divider resistor ratio
 voltLow~3~3~N~Warning level for low voltage
 voltInterval~5~3~N~Voltage check interval (mins)
 voltPin~~3~N~ADC Pin used for battery voltage

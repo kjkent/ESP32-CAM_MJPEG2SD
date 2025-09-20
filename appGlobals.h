@@ -62,7 +62,7 @@
 #define INCLUDE_FTP_HFS true  // ftp.cpp (file upload)
 #define INCLUDE_TGRAM false   // telegram.cpp (Telegram app interface)
 #define INCLUDE_AUDIO false   // audio.cpp (microphones & speakers)
-#define INCLUDE_PERIPH false  // peripherals.cpp (servos, PIR, led etc)
+#define INCLUDE_PERIPH true  // peripherals.cpp (servos, PIR, led etc)
 #define INCLUDE_SMTP false    // smtp.cpp (email)
 #define INCLUDE_MQTT true    // mqtt.cpp (MQTT)
 #define INCLUDE_HASIO true   // mqtt.cpp (Send home assistant discovery messages). Needs INCLUDE_MQTT true
@@ -451,7 +451,7 @@ extern int servoCenter;
 extern bool SVactive;
 
 // battery monitor
-extern int voltDivider;
+extern float voltDivider;
 extern float voltLow;
 extern int voltInterval;
 

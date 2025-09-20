@@ -58,7 +58,7 @@ int ds18b20Pin; // if INCLUDE_DS18B20 true
 
 // batt monitoring 
 // only pin 33 can be used on ESP32-Cam module as it is the only available analog pin
-int voltPin; 
+int voltPin = 1; 
 
 // additional peripheral configuration
 // configure for specific servo model, eg for SG90
@@ -70,8 +70,9 @@ int servoDelay; // control rate of change of servo angle using delay
 int servoCenter = 90; // angle in degrees where servo is centered 
 
 // configure battery monitor
-int voltDivider; // set battVoltageDivider value to be divisor of input voltage from resistor divider
-                 // eg: 100k / 100k would be divisor value 2
+float voltDivider = 4.0 / 3.0; // divisor of input voltage from resistor divider. 
+                               //(100k/300k = 1.33333 divisor (or 4.0/3.0))
+                               // eg: 100k / 100k would be divisor value 2
 float voltLow; // voltage level at which to send out email alert
 int voltInterval; // interval in minutes to check battery voltage
 
